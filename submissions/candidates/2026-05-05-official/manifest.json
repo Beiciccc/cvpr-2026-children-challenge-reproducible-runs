@@ -1,0 +1,134 @@
+{
+  "created_at_utc": "2026-05-05T06:53:29+00:00",
+  "compliance": "official-data-only deterministic light-feature candidates",
+  "inputs": {
+    "track1": {
+      "path": "data/raw/track1_train.json",
+      "sha256": "cb0ec0d9fa67cb217f878bc2e2b9e45ed5b2d06a742bff6ebbafda73dcacc7ab"
+    },
+    "track2": {
+      "path": "data/raw/track2_train.json",
+      "sha256": "a16ae5f2eb41495dd4f46b912898a43cfadcf48dad17e986f7f8a634184724c2"
+    },
+    "features": {
+      "path": "features/patient_light_features.csv",
+      "sha256": "a8051b4caea19d14a8f33f55941cad43b7e9aa546ad3a34a55c46cb14c61fd92"
+    },
+    "s09_anchor": {
+      "path": "submissions/candidates/s09_t1_id_t2_feature_nopid.csv",
+      "sha256": "1a6482c9dba10315d96e03c1e00b4a8ff3c7766ff6e72e24d48531d1157a46db"
+    }
+  },
+  "experiments": [
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of01_t1_meta11_t2_s09",
+      "description": "Track1 light metadata KNN k=11; Track2 s09 feature NN anchor.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of01_t1_meta11_t2_s09.csv",
+      "sha256": "ccf4fe7704851b7fc8bb60206fb656fd697a3b0ae316cde874ec1a79054f73f4",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track1-4|track1-5|track1-18|track1-26|track1-28|track1-40|track1-42|track1-43|track1-47|track1-48|track1-53|track1-54|track1-72|track1-78|track1-83|track1-85",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of02_t1_pid5_t2_s09",
+      "description": "Track1 patient-ID KNN k=5 threshold 0.45; Track2 s09 feature NN anchor.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of02_t1_pid5_t2_s09.csv",
+      "sha256": "35d140b3a263a5f1c842340f439948968ec80b1fd6469aaff0d541588cb1ab05",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track1-4|track1-5|track1-18|track1-26|track1-28|track1-40|track1-42|track1-43|track1-47|track1-48|track1-53|track1-54|track1-72|track1-78|track1-83|track1-85",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of03_t1_meta11_t2_meta3",
+      "description": "Track1 metadata KNN k=11; Track2 metadata KNN k=3.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of03_t1_meta11_t2_meta3.csv",
+      "sha256": "6d5bf0e89a63e80b404326398e3bfc848b15c9a283c528cedd237ec78aeaa251",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track1-4|track1-5|track1-18|track1-26|track1-28|track1-40|track1-42|track1-43|track1-47|track1-48|track1-53|track1-54|track1-72|track1-78|track1-83|track1-85|track2-6|track2-26|track2-35|track2-39|track2-42|track2-50",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of04_t1_majority_t2_meta3",
+      "description": "Track1 global majority; Track2 metadata KNN k=3.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of04_t1_majority_t2_meta3.csv",
+      "sha256": "eeaa0ccef367f9ee8b13693800f7310836f68dc1f91a3f1bd6c41e00baf89bd6",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track1-4|track1-5|track1-18|track1-26|track1-28|track1-40|track1-42|track1-43|track1-47|track1-48|track1-53|track1-54|track1-72|track1-78|track1-83|track1-85|track2-6|track2-26|track2-35|track2-39|track2-42|track2-50",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of05_t1_all11_t2_side3",
+      "description": "Track1 all-view light KNN k=11; Track2 side-light KNN k=3.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of05_t1_all11_t2_side3.csv",
+      "sha256": "e775b750d4413ebeefc8bcd742b62d6381fff4f5b04b5d63f87db145b806d322",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track1-4|track1-5|track1-18|track1-26|track1-28|track1-40|track1-42|track1-43|track1-47|track1-48|track1-53|track1-54|track1-72|track1-78|track1-83|track1-85|track2-6|track2-26|track2-42|track2-50",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of06_t1_s09_t2_all3",
+      "description": "Track1 s09 ID anchor; Track2 all-view light KNN k=3.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of06_t1_s09_t2_all3.csv",
+      "sha256": "f04fc8afbff2509380d97971d8a9848e9302795dd5dad34b62eb74fd5bed92c5",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track2-6|track2-7|track2-13|track2-26|track2-35|track2-39|track2-42",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of07_t1_s09_t2_meta3",
+      "description": "Track1 s09 ID anchor; Track2 metadata KNN k=3.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of07_t1_s09_t2_meta3.csv",
+      "sha256": "6aa0d15e20a5a6f9e13984f24f7df5d4529d483033d175f13c1d6a5cc5ded121",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track2-6|track2-26|track2-35|track2-39|track2-42|track2-50",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of08_t1_meta7_t2_s09",
+      "description": "Track1 light metadata KNN k=7; Track2 s09 feature NN anchor.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of08_t1_meta7_t2_s09.csv",
+      "sha256": "ef4fab88128c7c5a65d2d81cbec8477b1c704caa71c78d01e97bf12684a8abe6",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track1-4|track1-5|track1-18|track1-26|track1-28|track1-40|track1-42|track1-43|track1-47|track1-48|track1-53|track1-54|track1-72|track1-78|track1-83|track1-85",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of09_t1_meta9_t2_s09",
+      "description": "Track1 light metadata KNN k=9; Track2 s09 feature NN anchor.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of09_t1_meta9_t2_s09.csv",
+      "sha256": "1dcc6fbf5f7ec4390bd2d642626efb883c6d903a08f9bdba405bc828e97ff07b",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track1-4|track1-5|track1-18|track1-26|track1-28|track1-40|track1-42|track1-43|track1-47|track1-48|track1-53|track1-54|track1-72|track1-78|track1-83|track1-85",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-05T06:53:29+00:00",
+      "experiment_id": "of10_t1_meta13_t2_s09",
+      "description": "Track1 light metadata KNN k=13; Track2 s09 feature NN anchor.",
+      "path": "submissions\\candidates\\2026-05-05-official\\of10_t1_meta13_t2_s09.csv",
+      "sha256": "693045755a6ca1b99fb52270ca2281e8be4f5225ac1f7f8e7f1e0c0703a432d6",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_s09": "track1-4|track1-5|track1-18|track1-26|track1-28|track1-40|track1-42|track1-43|track1-47|track1-48|track1-53|track1-54|track1-72|track1-78|track1-83|track1-85",
+      "official_data_only": true
+    }
+  ]
+}

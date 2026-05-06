@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+._*
+.kaggle/
+kaggle.json
+data/external/
+references/
+*localtest*/
+*localcheck*/
+submission_log_*.csv

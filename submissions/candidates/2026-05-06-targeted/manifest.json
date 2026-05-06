@@ -1,0 +1,229 @@
+{
+  "created_at_utc": "2026-05-06T02:30:26+00:00",
+  "compliance": "official-data-only deterministic single-row probes around of01",
+  "inputs": {
+    "track1": {
+      "path": "data/raw/track1_train.json",
+      "sha256": "cb0ec0d9fa67cb217f878bc2e2b9e45ed5b2d06a742bff6ebbafda73dcacc7ab"
+    },
+    "track2": {
+      "path": "data/raw/track2_train.json",
+      "sha256": "a16ae5f2eb41495dd4f46b912898a43cfadcf48dad17e986f7f8a634184724c2"
+    },
+    "features": {
+      "path": "features/patient_light_features.csv",
+      "sha256": "a8051b4caea19d14a8f33f55941cad43b7e9aa546ad3a34a55c46cb14c61fd92"
+    },
+    "base": {
+      "path": "submissions/candidates/2026-05-05-official/of01_t1_meta11_t2_s09.csv",
+      "sha256": "ccf4fe7704851b7fc8bb60206fb656fd697a3b0ae316cde874ec1a79054f73f4"
+    }
+  },
+  "columns": [
+    "ID",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L15",
+    "L16",
+    "L17",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "Total",
+    "Left_gait_subtype",
+    "Right_gait_subtype"
+  ],
+  "experiments": [
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t01_of01_p53_meta13",
+      "description": "Single-row Track1 probe: track1-53 from official metadata KNN k=13; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t01_of01_p53_meta13.csv",
+      "sha256": "65bce37ae0a2bc1cfd5ada5fe27e4cc67575aa72f38ccb60ab1f7a96d0346429",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t02_of01_p53_pid5",
+      "description": "Single-row Track1 probe: track1-53 from official patient-ID KNN k=5 threshold 0.45; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t02_of01_p53_pid5.csv",
+      "sha256": "e5a02e8fdd0873c90129b701c1f1542f1baffd0f0d6dfce42e599b569f0d1e06",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t03_of01_p18_meta13",
+      "description": "Single-row Track1 probe: track1-18 from official metadata KNN k=13; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t03_of01_p18_meta13.csv",
+      "sha256": "ab6887aa6ac85e3348b91bed426a640ace5c25a7ecdd768c02ed77ddc6adc59c",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-18",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t04_of01_p54_meta7",
+      "description": "Single-row Track1 probe: track1-54 from official metadata KNN k=7; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t04_of01_p54_meta7.csv",
+      "sha256": "537c977c82164d1f143269b9209f60a1dc07f2a101df63d5fe30641b340f4fd5",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-54",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t05_of01_p78_meta9",
+      "description": "Single-row Track1 probe: track1-78 from official metadata KNN k=9; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t05_of01_p78_meta9.csv",
+      "sha256": "ad7b7dac6ea93cd27e74b38822a98f99ae06028b69190b71c101390030d02eaf",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-78",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t06_of01_p48_meta13",
+      "description": "Single-row Track1 probe: track1-48 from official metadata KNN k=13; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t06_of01_p48_meta13.csv",
+      "sha256": "0c39aeb4fd98c8226a17ca39ce5ac607a0d19b4de149c0fcd626c960905e9c42",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-48",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t07_of01_t2_6_all3",
+      "description": "Single-row Track2 probe: track2-6 from official all-view KNN k=3; Track1 remains of01.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t07_of01_t2_6_all3.csv",
+      "sha256": "bfd8857229ec6767db0a37cb60eae3511e729abb1d6b4136df7f471ec5f2b4f7",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track2-6",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t08_of01_t2_42_all3",
+      "description": "Single-row Track2 probe: track2-42 from official all-view KNN k=3; Track1 remains of01.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t08_of01_t2_42_all3.csv",
+      "sha256": "3b4f839c9d0fd6f8ba2478cd10ba9ea4c498379a43cd76df59135deceb863b8d",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track2-42",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t09_of01_p53_p18_meta13",
+      "description": "Two-row Track1 probe: track1-53 and track1-18 from official metadata KNN k=13; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t09_of01_p53_p18_meta13.csv",
+      "sha256": "43c1b066482fcc8aa0b3e51c422b00b1181c0cf1b9f3e12cb19d392477c8b083",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-18|track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t10_of01_p53_p54_meta",
+      "description": "Two-row Track1 probe: track1-53 from meta13 plus track1-54 from meta7; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t10_of01_p53_p54_meta.csv",
+      "sha256": "992ffc024ae7adda397795bfddc6e0be035181561cec4b6f72d8f728d0dc04c4",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-53|track1-54",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t11_of01_p48_p53_meta13",
+      "description": "Two-row Track1 follow-up: combine the positive track1-48 and track1-53 metadata KNN k=13 rows; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t11_of01_p48_p53_meta13.csv",
+      "sha256": "68dc373955907ffa1f380332fc9c4d7052d5656332040ba0f6f510df8958e6e2",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-48|track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t12_of01_p48_p54_meta",
+      "description": "Two-row Track1 follow-up: combine positive track1-48 meta13 and track1-54 meta7 rows; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t12_of01_p48_p54_meta.csv",
+      "sha256": "29c664d159a88cfb686b89a8fd2cd850ae5f4d551f10090af078c86bd09ba2d5",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-48|track1-54",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t13_of01_p48_p53_p54_meta",
+      "description": "Three-row Track1 follow-up: combine positive p48, p53, and p54 official-feature rows; Track2 remains of01/s09.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t13_of01_p48_p53_p54_meta.csv",
+      "sha256": "2ca461893ed3275112433cc5c70ae232e6a2daac570abb7ace04ee8545bf0718",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-48|track1-53|track1-54",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t14_of01_p48_t2_6_all3",
+      "description": "Mixed follow-up: keep positive track1-48 meta13 and test one official all-view KNN Track2 row track2-6.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t14_of01_p48_t2_6_all3.csv",
+      "sha256": "1fab5ce9c4f2d505cc240ce841c9ea3a77b1448767a42a1699fe71a867f37932",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-48|track2-6",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-06T02:30:26+00:00",
+      "experiment_id": "t15_of01_p48_p53_p54_t2_6",
+      "description": "Final adaptive probe: add official all-view KNN track2-6 row to the best p48+p53+p54 Track1 combination.",
+      "path": "submissions\\candidates\\2026-05-06-targeted\\t15_of01_p48_p53_p54_t2_6.csv",
+      "sha256": "8bbf3a8d5a8908b6100973e0e5235893414c6645762031edcb294bb8c81fb143",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_of01": "track1-48|track1-53|track1-54|track2-6",
+      "official_data_only": true
+    }
+  ]
+}
