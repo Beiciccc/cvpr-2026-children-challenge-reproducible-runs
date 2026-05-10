@@ -1,0 +1,174 @@
+{
+  "created_at_utc": "2026-05-10T00:39:09+00:00",
+  "compliance": "official-data-only deterministic small Track1 and controlled Track2-6 probes around g11",
+  "inputs": {
+    "track1": {
+      "path": "data/raw/track1_train.json",
+      "sha256": "cb0ec0d9fa67cb217f878bc2e2b9e45ed5b2d06a742bff6ebbafda73dcacc7ab"
+    },
+    "track2": {
+      "path": "data/raw/track2_train.json",
+      "sha256": "a16ae5f2eb41495dd4f46b912898a43cfadcf48dad17e986f7f8a634184724c2"
+    },
+    "features": {
+      "path": "features/patient_light_features.csv",
+      "sha256": "a8051b4caea19d14a8f33f55941cad43b7e9aa546ad3a34a55c46cb14c61fd92"
+    },
+    "base_g11": {
+      "path": "submissions/candidates/2026-05-07-targeted/g11_t15_t2_42_13_all3.csv",
+      "sha256": "6e78254045e3dcfea727b00df8fb691e7ec96d57586ebad4992a13d643cdab23"
+    }
+  },
+  "columns": [
+    "ID",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L15",
+    "L16",
+    "L17",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "Total",
+    "Left_gait_subtype",
+    "Right_gait_subtype"
+  ],
+  "experiments": [
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i01_g11_t1_54_meta9_thr045",
+      "description": "Replace Track1-54 with a near-anchor metadata k=9 low-threshold row.; row=54; method=feature:meta; k=9; threshold=0.45; total=18",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i01_g11_t1_54_meta9_thr045.csv",
+      "sha256": "cd598a8966c124850f5838140ea73b102e04f938b8d9f49c2f8794e4043a0e9c",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track1-54",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i02_g11_t1_47_meta13_thr040",
+      "description": "Probe Track1-47 with a small metadata k=13 low-threshold row.; row=47; method=feature:meta; k=13; threshold=0.4; total=18",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i02_g11_t1_47_meta13_thr040.csv",
+      "sha256": "fb7bd3f68f91e9d699dce1c1cabc102f65a6ca39d544c023f108b3b5b53bb50c",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track1-47",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i03_g11_t1_42_meta7_thr045",
+      "description": "Probe Track1-42 with a small metadata k=7 low-threshold row.; row=42; method=feature:meta; k=7; threshold=0.45; total=6",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i03_g11_t1_42_meta7_thr045.csv",
+      "sha256": "08df83ed06c315ce1711c35897687ef96fa3a84c106da1516676e23886c87429",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track1-42",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i04_g11_t1_43_meta11_thr055",
+      "description": "Probe Track1-43 with a small metadata k=11 high-threshold row.; row=43; method=feature:meta; k=11; threshold=0.55; total=6",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i04_g11_t1_43_meta11_thr055.csv",
+      "sha256": "033236ee5a52b1504be57334af0ddc15ab6df6549ea4f779a34801b5eb48d450",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track1-43",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i05_g11_t1_72_meta11_thr055",
+      "description": "Probe Track1-72 with a small metadata k=11 high-threshold row.; row=72; method=feature:meta; k=11; threshold=0.55; total=6",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i05_g11_t1_72_meta11_thr055.csv",
+      "sha256": "423378a9f7914e6d22bf6e9a941ca1aadde998ae6b2fe1026b91fe17402af30e",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track1-72",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i06_g11_t1_83_all15_thr040",
+      "description": "Probe Track1-83 with an all-feature k=15 low-threshold row.; row=83; method=feature:all; k=15; threshold=0.4; total=7",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i06_g11_t1_83_all15_thr040.csv",
+      "sha256": "283ae22af6098a031540681e032bd9a940494638c19d5e61b959aadcd8e1e27d",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track1-83",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i07_g11_t1_53_meta3_thr040",
+      "description": "Strengthen Track1-53 with metadata k=3 low-threshold row.; row=53; method=feature:meta; k=3; threshold=0.4; total=20",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i07_g11_t1_53_meta3_thr040.csv",
+      "sha256": "3da89d72383b3eb205ff63396a47403fe903d5052d5b325faeb34b6c557257ed",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i08_g11_t1_48_meta15_thr045",
+      "description": "Strengthen Track1-48 with metadata k=15 low-threshold row.; row=48; method=feature:meta; k=15; threshold=0.45; total=19",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i08_g11_t1_48_meta15_thr045.csv",
+      "sha256": "347fb0d207e8ba0c3ee1c2447fb7dffcfac0e2cf2c2f860e8f952788429d2769",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track1-48",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i09_g11_t2_6_meta3",
+      "description": "Switch Track2-6 from all3 to metadata k=3 as a controlled Track2-6 retest.; row=6; method=feature:meta; k=3; label=('type2', 'type2')",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i09_g11_t2_6_meta3.csv",
+      "sha256": "2859fa7c6f8da00e03a3e5c729349d5cccfe5fbd380948273b19850681c4945c",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track2-6",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-10T00:39:09+00:00",
+      "experiment_id": "i10_g11_t1_72_side11_thr045",
+      "description": "Probe Track1-72 with an alternate small side-feature k=11 row.; row=72; method=feature:side; k=11; threshold=0.45; total=7",
+      "path": "submissions\\candidates\\2026-05-10-targeted\\i10_g11_t1_72_side11_thr045.csv",
+      "sha256": "6594fd9e91d197b6cbc54216ef72b3af5bec05f95b3cca2508e6770dea3cc63e",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_g11": "track1-72",
+      "official_data_only": true
+    }
+  ]
+}
