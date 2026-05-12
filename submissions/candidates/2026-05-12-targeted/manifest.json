@@ -1,0 +1,190 @@
+{
+  "created_at_utc": "2026-05-12T08:05:08+00:00",
+  "compliance": "official-data-only deterministic combinations of positive May 10 Track1 rows",
+  "inputs": {
+    "track1": {
+      "path": "data/raw/track1_train.json",
+      "sha256": "cb0ec0d9fa67cb217f878bc2e2b9e45ed5b2d06a742bff6ebbafda73dcacc7ab"
+    },
+    "features": {
+      "path": "features/patient_light_features.csv",
+      "sha256": "a8051b4caea19d14a8f33f55941cad43b7e9aa546ad3a34a55c46cb14c61fd92"
+    },
+    "base_i07": {
+      "path": "submissions/candidates/2026-05-10-targeted/i07_g11_t1_53_meta3_thr040.csv",
+      "sha256": "3da89d72383b3eb205ff63396a47403fe903d5052d5b325faeb34b6c557257ed"
+    },
+    "source_i02": {
+      "path": "submissions/candidates/2026-05-10-targeted/i02_g11_t1_47_meta13_thr040.csv",
+      "sha256": "fb7bd3f68f91e9d699dce1c1cabc102f65a6ca39d544c023f108b3b5b53bb50c"
+    },
+    "source_i04": {
+      "path": "submissions/candidates/2026-05-10-targeted/i04_g11_t1_43_meta11_thr055.csv",
+      "sha256": "033236ee5a52b1504be57334af0ddc15ab6df6549ea4f779a34801b5eb48d450"
+    },
+    "source_i05": {
+      "path": "submissions/candidates/2026-05-10-targeted/i05_g11_t1_72_meta11_thr055.csv",
+      "sha256": "423378a9f7914e6d22bf6e9a941ca1aadde998ae6b2fe1026b91fe17402af30e"
+    },
+    "source_i08": {
+      "path": "submissions/candidates/2026-05-10-targeted/i08_g11_t1_48_meta15_thr045.csv",
+      "sha256": "347fb0d207e8ba0c3ee1c2447fb7dffcfac0e2cf2c2f860e8f952788429d2769"
+    },
+    "source_g11": {
+      "path": "submissions/candidates/2026-05-07-targeted/g11_t15_t2_42_13_all3.csv",
+      "sha256": "6e78254045e3dcfea727b00df8fb691e7ec96d57586ebad4992a13d643cdab23"
+    }
+  },
+  "columns": [
+    "ID",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L15",
+    "L16",
+    "L17",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "Total",
+    "Left_gait_subtype",
+    "Right_gait_subtype"
+  ],
+  "experiments": [
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k01_i07_p47",
+      "description": "Add the positive i02 Track1-47 row to the i07 anchor.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k01_i07_p47.csv",
+      "sha256": "e397b59e4173f13bceabe059753664dca89a4947aa41f74f12bf5276478aeebd",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-47",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k02_i07_p43",
+      "description": "Add the positive i04 Track1-43 row to the i07 anchor.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k02_i07_p43.csv",
+      "sha256": "6ece88bcd680d002b272b16c158a59728f66a2df3ba6865480d9d1380ef75098",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-43",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k03_i07_p72",
+      "description": "Add the positive i05 Track1-72 row to the i07 anchor.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k03_i07_p72.csv",
+      "sha256": "2641ee68b82a2419851e3623dcb77bc7a53482ae80c0ff163fd7edb03f1ce539",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-72",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k04_i07_p48",
+      "description": "Add the positive i08 Track1-48 row to the i07 anchor.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k04_i07_p48.csv",
+      "sha256": "f905da584f97094e70d56a10a7f225fab1811e4516d07f1f4d34d2840be9a6a8",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-48",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k05_i07_p47_p43",
+      "description": "Add i02 Track1-47 and i04 Track1-43 rows to i07.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k05_i07_p47_p43.csv",
+      "sha256": "140f2ba4cc62c942798669eff7639497bba0e2d032b60d0d171c5f7b29c7b34d",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-43|track1-47",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k06_i07_p47_p72",
+      "description": "Add i02 Track1-47 and i05 Track1-72 rows to i07.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k06_i07_p47_p72.csv",
+      "sha256": "f6250447d71399c2e94f69820325b1fdcf444cd3845e3a2070f7022d57c8ac4f",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-47|track1-72",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k07_i07_p47_p48",
+      "description": "Add i02 Track1-47 and i08 Track1-48 rows to i07.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k07_i07_p47_p48.csv",
+      "sha256": "b9983487e06ea65d82617e1cdaf9347c45f9c5a794b049b43c365d583e0a214d",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-47|track1-48",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k08_i07_p47_p43_p72_p48",
+      "description": "Add all four positive non-p53 May 10 Track1 rows to i07.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k08_i07_p47_p43_p72_p48.csv",
+      "sha256": "c60b987bb5afcdea163ad79857cb4f5fea0165bc9129aa8004a85a406f238df2",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-43|track1-47|track1-48|track1-72",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k09_g11_t1_53_meta5_thr045",
+      "description": "Replace only Track1-53 on g11 with metadata k=5 threshold 0.45 to test p53 bit choice.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k09_g11_t1_53_meta5_thr045.csv",
+      "sha256": "9230273e35cd9167bb2d617531e1bc99671876797835107bfae402623c483e64",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-12T08:05:08+00:00",
+      "experiment_id": "k10_g11_t1_53_meta15_thr045",
+      "description": "Replace only Track1-53 on g11 with metadata k=15 threshold 0.45 to test p53 bit choice.",
+      "path": "submissions\\candidates\\2026-05-12-targeted\\k10_g11_t1_53_meta15_thr045.csv",
+      "sha256": "3f5b734369ac64c1c13ecd8378610831468913ed9c82d7651eb2fdb4c3ea94e2",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_i07": "track1-53",
+      "official_data_only": true
+    }
+  ]
+}
