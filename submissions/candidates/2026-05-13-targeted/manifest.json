@@ -1,0 +1,170 @@
+{
+  "created_at_utc": "2026-05-13T02:11:28+00:00",
+  "compliance": "official-data-only deterministic Track1 micro-variants around k08",
+  "inputs": {
+    "track1": {
+      "path": "data/raw/track1_train.json",
+      "sha256": "cb0ec0d9fa67cb217f878bc2e2b9e45ed5b2d06a742bff6ebbafda73dcacc7ab"
+    },
+    "features": {
+      "path": "features/patient_light_features.csv",
+      "sha256": "a8051b4caea19d14a8f33f55941cad43b7e9aa546ad3a34a55c46cb14c61fd92"
+    },
+    "base_k08": {
+      "path": "submissions/candidates/2026-05-12-targeted/k08_i07_p47_p43_p72_p48.csv",
+      "sha256": "c60b987bb5afcdea163ad79857cb4f5fea0165bc9129aa8004a85a406f238df2"
+    }
+  },
+  "columns": [
+    "ID",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L15",
+    "L16",
+    "L17",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "Total",
+    "Left_gait_subtype",
+    "Right_gait_subtype"
+  ],
+  "experiments": [
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l01_k08_t1_78_meta9_thr045",
+      "description": "Add a one-bit metadata variant on Track1-78.; row=78; method=feature:meta; k=9; threshold=0.45; total=7",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l01_k08_t1_78_meta9_thr045.csv",
+      "sha256": "c8e1f9b82cb522775f1aa96527c6eadfd443a6c4c21b7c092a898f28b14da046",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-78",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l02_k08_t1_78_meta13_thr050",
+      "description": "Add an alternate one-bit metadata variant on Track1-78.; row=78; method=feature:meta; k=13; threshold=0.5; total=7",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l02_k08_t1_78_meta13_thr050.csv",
+      "sha256": "0f1be02bbf6e5f27ceb9c77af2f64f8aa244932690610aae7ed2e0910d43fe79",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-78",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l03_k08_t1_83_meta15_thr045",
+      "description": "Add a one-bit metadata variant on Track1-83.; row=83; method=feature:meta; k=15; threshold=0.45; total=7",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l03_k08_t1_83_meta15_thr045.csv",
+      "sha256": "0f855198d92c29a111fe9622d92336691bfbb06e8653c0161e042e18b845203e",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-83",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l04_k08_t1_83_pid3_thr035",
+      "description": "Add a one-bit patient-ID variant on Track1-83.; row=83; method=pid; k=3; threshold=0.35; total=7",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l04_k08_t1_83_pid3_thr035.csv",
+      "sha256": "7479a3336ce78926c72c755caf18cc91bebb704c6d0868b02c90cda8d404f4d9",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-83",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l05_k08_t1_85_meta15_thr035",
+      "description": "Add a one-bit metadata variant on Track1-85.; row=85; method=feature:meta; k=15; threshold=0.35; total=12",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l05_k08_t1_85_meta15_thr035.csv",
+      "sha256": "1e547a75f96d2f5f6f1d57a15d5cb2c1a54d90ff819cf8c2824c05f14d9055a5",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-85",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l06_k08_t1_72_meta11_thr050",
+      "description": "Strengthen the existing Track1-72 positive row by one bit.; row=72; method=feature:meta; k=11; threshold=0.5; total=7",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l06_k08_t1_72_meta11_thr050.csv",
+      "sha256": "9de37068ce457812c3ed68bd57e39516fa931d5818eb96dfd96639a5250b7d66",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-72",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l07_k08_t1_43_meta9_thr045",
+      "description": "Strengthen the existing Track1-43 positive row by one bit.; row=43; method=feature:meta; k=9; threshold=0.45; total=7",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l07_k08_t1_43_meta9_thr045.csv",
+      "sha256": "0d4d21db64890bfdfe2f98276d694ae36ec29d7dae21d39daaca98826c80a489",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-43",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l08_k08_t1_53_meta15_thr045",
+      "description": "Swap the Track1-53 high-confidence row to an equal-total metadata k15 variant.; row=53; method=feature:meta; k=15; threshold=0.45; total=20",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l08_k08_t1_53_meta15_thr045.csv",
+      "sha256": "7ec2d1b5796a5154f84631973971c7c114122842235db83bd8e641c939e4bd6f",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l09_k08_t1_28_meta13_thr050",
+      "description": "Add a one-bit metadata variant on Track1-28.; row=28; method=feature:meta; k=13; threshold=0.5; total=12",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l09_k08_t1_28_meta13_thr050.csv",
+      "sha256": "703914767d4d984e52b1b983e987a0e70458ba58ce68e3381dc91dba83d8c037",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-28",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-13T02:11:28+00:00",
+      "experiment_id": "l10_k08_t1_26_meta13_thr050",
+      "description": "Probe a one-bit metadata variant on Track1-26.; row=26; method=feature:meta; k=13; threshold=0.5; total=8",
+      "path": "submissions\\candidates\\2026-05-13-targeted\\l10_k08_t1_26_meta13_thr050.csv",
+      "sha256": "3e0569087fc863276666262ff3905fb947bc228525fe83f98261c3890d293655",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-26",
+      "official_data_only": true
+    }
+  ]
+}
