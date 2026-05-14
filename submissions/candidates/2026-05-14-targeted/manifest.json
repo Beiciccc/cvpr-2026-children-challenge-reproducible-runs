@@ -1,0 +1,178 @@
+{
+  "created_at_utc": "2026-05-14T02:11:57+00:00",
+  "compliance": "official-data-only deterministic k08/l08 Track1 ablations and p53 variants",
+  "inputs": {
+    "track1": {
+      "path": "data/raw/track1_train.json",
+      "sha256": "cb0ec0d9fa67cb217f878bc2e2b9e45ed5b2d06a742bff6ebbafda73dcacc7ab"
+    },
+    "features": {
+      "path": "features/patient_light_features.csv",
+      "sha256": "a8051b4caea19d14a8f33f55941cad43b7e9aa546ad3a34a55c46cb14c61fd92"
+    },
+    "base_k08": {
+      "path": "submissions/candidates/2026-05-12-targeted/k08_i07_p47_p43_p72_p48.csv",
+      "sha256": "c60b987bb5afcdea163ad79857cb4f5fea0165bc9129aa8004a85a406f238df2"
+    },
+    "base_l08": {
+      "path": "submissions/candidates/2026-05-13-targeted/l08_k08_t1_53_meta15_thr045.csv",
+      "sha256": "7ec2d1b5796a5154f84631973971c7c114122842235db83bd8e641c939e4bd6f"
+    },
+    "source_g11": {
+      "path": "submissions/candidates/2026-05-07-targeted/g11_t15_t2_42_13_all3.csv",
+      "sha256": "6e78254045e3dcfea727b00df8fb691e7ec96d57586ebad4992a13d643cdab23"
+    }
+  },
+  "columns": [
+    "ID",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L15",
+    "L16",
+    "L17",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "Total",
+    "Left_gait_subtype",
+    "Right_gait_subtype"
+  ],
+  "experiments": [
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m01_k08_t1_72_meta9_thr060",
+      "description": "Reduce Track1-72 severity by one bit on top of k08 after the May 13 p72 severity addition failed.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m01_k08_t1_72_meta9_thr060.csv",
+      "sha256": "2dae0cb702427e1e21b5ca97419ff48a492dad24bfdff0ae49ac2e9eb607b566",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-72",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m02_l08_t1_72_meta9_thr060",
+      "description": "Reduce Track1-72 severity by one bit on the public-tied l08 p53 anchor.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m02_l08_t1_72_meta9_thr060.csv",
+      "sha256": "aedcda4901af43528072f284f4f6c417b11b53b0eabae9097151a97bdf8c0cc6",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-53|track1-72",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m03_k08_t1_48_side15_thr045",
+      "description": "Replace Track1-48 with a side-feature row to test a lower-severity p48 distribution.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m03_k08_t1_48_side15_thr045.csv",
+      "sha256": "3bd3e162cde0431ce47193782108061c47b576062a5caea21442a434ac684ff2",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-48",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m04_l08_t1_48_side15_thr045",
+      "description": "Replace Track1-48 with the side-feature row on the public-tied l08 p53 anchor.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m04_l08_t1_48_side15_thr045.csv",
+      "sha256": "e01ac89ec12b41d9f06bdd08fba7e0677ef76ffc7041b3dd9a53d0d490d0e799",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-48|track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m05_k08_t1_43_meta15_thr055",
+      "description": "Replace Track1-43 with a conservative metadata k15 threshold 0.55 row.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m05_k08_t1_43_meta15_thr055.csv",
+      "sha256": "a5712610d2b6c4faf81746691cc372eaa9fde99f9869567965a3a607ae451a8f",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-43",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m06_l08_t1_43_meta15_thr055",
+      "description": "Replace Track1-43 with the conservative metadata row on the public-tied l08 p53 anchor.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m06_l08_t1_43_meta15_thr055.csv",
+      "sha256": "3b87a18fc4eda77b7d4f246dc94c62a5a7d18621343dfccedef34b246bc9a0a9",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-43|track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m07_k08_t1_53_meta11_thr040",
+      "description": "Remove the two p53 strengthening bits with metadata k11 threshold 0.40 on top of k08.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m07_k08_t1_53_meta11_thr040.csv",
+      "sha256": "80442b1521e49d5a33d785874552a302d6683beeedffa679738bd3767820fae9",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m08_k08_t1_53_meta13_thr040",
+      "description": "Probe a nearby p53 metadata k13 threshold 0.40 row on top of k08.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m08_k08_t1_53_meta13_thr040.csv",
+      "sha256": "eba28f6b9b47ffe88cd93a3ba22d27f988300535ad5160908391f266b9276189",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m09_l08_revert_t1_47_g11",
+      "description": "Use the public-tied l08 p53 variant and revert Track1-47 to test whether p47 is still required.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m09_l08_revert_t1_47_g11.csv",
+      "sha256": "cb9d3e7a2151c75d17a0ce99326c56c126bb831c6af559bbec5bc17456f57973",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-47|track1-53",
+      "official_data_only": true
+    },
+    {
+      "created_at_utc": "2026-05-14T02:11:57+00:00",
+      "experiment_id": "m10_l08_revert_t1_48_g11",
+      "description": "Use the public-tied l08 p53 variant and revert Track1-48 to test whether the p48 three-bit addition is still required.",
+      "path": "submissions\\candidates\\2026-05-14-targeted\\m10_l08_revert_t1_48_g11.csv",
+      "sha256": "d21b9e14965a5dad67fb41484633f2dd794170770d7c8dfe16a8ddace8c7565d",
+      "validation_status": "pass",
+      "validation_errors": "",
+      "diff_rows_vs_k08": "track1-48|track1-53",
+      "official_data_only": true
+    }
+  ]
+}
